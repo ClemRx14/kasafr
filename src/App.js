@@ -4,8 +4,8 @@ import Home from './Home';
 import About from './About';
 import Error from './Error';
 import Logement from './Logement';
-import Header from './Header';
-import Footer from './Footer';
+import Header from './Composants/Header';
+import Footer from './Composants/Footer';
 
 
 function App() {

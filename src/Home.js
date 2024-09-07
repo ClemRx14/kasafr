@@ -1,9 +1,15 @@
 import React from 'react';
+import Banner from './Composants/Banner';
 
 function Home() {
   return (
-  <h1>Page Acceuil</h1>
+  <div>
+    <Banner
+    titre="Chez vous, partout et ailleurs"
+    className="bannierehome"
+     />
+  </div>
   );
-}
+};
 
 export default Home;
