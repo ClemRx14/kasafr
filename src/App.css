@@ -82,3 +82,7 @@ footer {
     text-wrap: nowrap;
 }
 
+.banniereabout {
+    background-image: url(/public/images/banniere2.png);
+}
+
