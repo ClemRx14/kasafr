@@ -86,3 +86,35 @@ footer {
     background-image: url(/public/images/banniere2.png);
 }
 
+
+/* Composant Card*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.containerCardLogements {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.card {
+    padding-top: 20px;
+}
+
+.card img {
+    height: 340px;
+    width: 340px;
+    border-radius: 25px;
+}
+
+.titleCard {
+    font-size: 5px;
+}
