@@ -97,24 +97,35 @@ a {
 .containerCardLogements {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    gap: 40px;
+    width: 86%;
     background-color: #F6F6F6;
     border-radius: 25px;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
+    margin: 0 auto;
+    gap: 20px;
+    padding-top: 25px;
 }
 .card {
-    padding-top: 20px;
+    padding-top: 15px;
+    margin-left: 10px;
+    position: relative;
 }
 
 .card img {
     height: 340px;
     width: 340px;
     border-radius: 25px;
+    object-fit: cover;
 }
 
 .titleCard {
-    font-size: 5px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-wrap: wrap;
 }
