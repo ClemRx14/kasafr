@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from './Composants/Banner';
 import Card from './Composants/Card';
 
-// Tableau d'objets où chaque objet représente un logement qui se nomme logement
+// Tableau d'objets où chaque objet représente un logement qui se nomme logement dans la fonction plus bas
 
 import logementsData from './logements.json';
 
