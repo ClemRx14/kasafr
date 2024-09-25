@@ -18,8 +18,10 @@ function Collapse({ title, content }) {
         <div className="objetsCollapse">
             <h2 className="titleCollapse" onClick={onoffCollapse}>
                 {title}
-                <span className="iconeCollapse">
-                {isOpen ? '⌄' : '⌃'}
+                
+                {/* Ajout de la classe rotate si isOpen est true */}
+                <span className={`iconeCollapse ${isOpen ? 'rotate' : ''}`}>
+                    ^
                 </span>
             </h2>
 
