@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 /* Composants Header et Footer */
-
+* {
+    font-family: 'Montserrat';
+}
 header {
     width: 86%;
     margin: 0 auto;
@@ -21,7 +23,6 @@ header {
 .listeheader a {
     text-decoration: none;
     color: black;
-    font-family: 'Montserrat';
     font-weight: 500;
     font-size: 24px;
 }
@@ -73,7 +74,6 @@ footer {
 }
 
 .titrebanniere {
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 48px;
     color: white;
@@ -127,7 +127,31 @@ a {
     bottom: 20px;
     left: 20px;
     color: white;
-    font-family: 'Montserrat';
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Composant Collapse page About */
+
+.containerCollapse {
+    width: 71%;
+    margin: 0 auto;
+}
+
+.objetsCollapse {
+    background-color: #FF6060;
+    border-radius: 5px;
+    
+}
+
+.titleCollapse {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+}
+
+.contentCollapse {
+    background-color: white;
 }

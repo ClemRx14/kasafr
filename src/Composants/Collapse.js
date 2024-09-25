@@ -18,6 +18,9 @@ function Collapse({ title, content }) {
         <div className="objetsCollapse">
             <h2 className="titleCollapse" onClick={onoffCollapse}>
                 {title}
+                <span className="iconeCollapse">
+                {isOpen ? '⌄' : '⌃'}
+                </span>
             </h2>
 
             {/* Affichage du content sous condition que isOpen est true */}
