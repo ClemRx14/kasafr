@@ -1,6 +1,6 @@
 import React from 'react';
-import Banner from './Composants/Banner';
-import Collapse from './Composants/Collapse';
+import Banner from '../Composants/Banner';
+import Collapse from '../Composants/Collapse';
 
 const aboutList = [
   {

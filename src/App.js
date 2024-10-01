@@ -1,9 +1,9 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Error from './Error';
-import Logement from './Logement';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Error from './Pages/Error';
+import Logement from './Pages/Logement';
 import Header from './Composants/Header';
 import Footer from './Composants/Footer';
 
