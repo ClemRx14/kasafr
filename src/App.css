@@ -176,3 +176,39 @@ a {
 }
 
 
+/* Page Error */
+
+.containerError {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorPageTitle {
+    color: #FF6060;
+    width: 41%;
+    font-weight: 700;
+    font-size: 288px;
+    margin: 0;
+}
+
+.textePageError {
+    color: #FF6060;
+    width: 65%;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0;
+}
+
+.lienHomepage {
+    width: 22%;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
