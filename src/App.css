@@ -212,3 +212,57 @@ a {
     text-underline-offset: 3px;
 }
 
+
+/* Page des Logements */
+
+.containerImageSlide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.slideImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86%;
+    position: relative;
+}
+
+.slideImage img {
+    object-fit: cover;
+    border-radius: 25px;
+    width: 100%;
+    height: 415px;
+}
+
+.navimage {
+    position: absolute;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.flechedegauche, .flechededroite {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.flechedegauche img, .flechededroite img {
+    height: 120px;
+}
+
+.compteurimage {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+
