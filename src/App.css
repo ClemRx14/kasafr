@@ -266,3 +266,35 @@ a {
     color: white;
 }
 
+/* Infos des logements. */
+
+.logement {
+    display: flex;
+    flex-direction: column;
+}
+
+.infosLogement {
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+    margin: 0 auto;
+
+}
+
+.titreLogement {
+    font-weight: 700;
+    font-size: 36px;
+    color: #FF6060;
+    margin-bottom: 0;
+}
+
+.localisationLogement {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.collapseLogement {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
