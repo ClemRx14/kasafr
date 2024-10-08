@@ -327,6 +327,11 @@ a {
     padding-right: 30px;
 }
 
+.hostLogement {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .hostPhoto {
     border-radius: 50%;
     width: 85%;
@@ -336,9 +341,6 @@ a {
 }
 
 .hostName {
-    position: absolute;
-    right: 240px;
-    top: 530px;
     color: #FF6060;
     font-size: 18px;
     font-weight: 500;
@@ -346,5 +348,24 @@ a {
 
 .logementRating img {
     margin-left: 10px;
+    cursor: pointer;
 }
+
+.logementRating {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.star {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+.starVide path:hover{
+    fill: #FF6060;
+}
+
 
