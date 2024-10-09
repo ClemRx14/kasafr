@@ -334,7 +334,7 @@ a {
 
 .hostPhoto {
     border-radius: 50%;
-    width: 85%;
+    width: 32%;
     position: relative;
     margin-top: 20px;
     margin-left: 30px;
@@ -353,8 +353,10 @@ a {
 
 .logementRating {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-top: 20px;
+    flex-direction: row-reverse;
+    /* Inverse l'ordre d'affichage pour remplir les étoiles de gauche à droite */
 }
 
 .star {
@@ -363,9 +365,10 @@ a {
     cursor: pointer;
 }
 
-
-.starVide path:hover{
+.starVide:hover path,
+.starVide:hover ~ .starVide path {
     fill: #FF6060;
 }
+
 
 
