@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 
-function Collapse({ title, content }) {
+function Collapse({ title, content, className }) {
 
     // Contenu caché par défaut, le state changera si l'utilisateur clique sur le titre de la Collapse
 
@@ -15,7 +15,7 @@ function Collapse({ title, content }) {
     }
 
     return (
-        <div className="objetsCollapse">
+        <div className={`objetsCollapse ${className}`}>
             <h2 className="titleCollapse" onClick={onoffCollapse}>
                 {title}
                 
@@ -26,8 +26,11 @@ function Collapse({ title, content }) {
             </h2>
 
             {/* Affichage du content sous condition que isOpen est true */}
-
-            {isOpen && <p className="contentCollapse">{content}</p>}
+            {isOpen && ( 
+                <p className={`contentCollapse ${isOpen ? 'collapseOuverte' : ''}`}>
+                    {content}
+                </p>
+            )}
         </div>
     );
 }
