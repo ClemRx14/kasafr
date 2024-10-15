@@ -81,8 +81,11 @@ footer {
     position: relative;
     z-index: 1;
     width: 60%;
-    text-wrap: nowrap;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
 }
+
 
 .banniereabout {
     background-image: url(/public/images/banniere2.png);
@@ -332,7 +335,6 @@ a {
     margin: 0;
 }
 
-/******* Voir ici pour le content de la collapse */
 
 .filtresLogement {
     width: 100%;
@@ -404,4 +406,31 @@ a {
 }
 
 
+/* Responsive  */
+
+
+@media screen and (max-width: 1024px) {
+    .titrebanniere {
+        white-space: wrap;
+        width: 80%;
+        font-size: 33px;
+    }
+
+    .listeheader {
+        padding: 0;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .navheader img {
+        width: 35%;
+    }
+    .bannierehome {
+        height: 111px;
+    }
+    .bannierecontainer {
+        height: 111px;
+    }
+}
 
