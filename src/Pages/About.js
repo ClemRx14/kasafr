@@ -34,7 +34,7 @@ function About() {
 
       <div className="containerCollapse">
       {aboutList.map((objet, index) => (
-        <Collapse key={index} title={objet.title} content={objet.content} />
+        <Collapse className="descriptionAbout" key={index} title={objet.title} content={objet.content} />
       ))}
       </div>
     </section>
