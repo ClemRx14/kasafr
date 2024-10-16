@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import { useRef } from 'react';
+import { useEffect } from 'react';
 
 
 function Collapse({ title, content, className }) {
@@ -14,23 +16,41 @@ function Collapse({ title, content, className }) {
         setIsOpen(!isOpen);
     }
 
+    // Referencer le div avec le content
+
+    const contentRef = useRef(null);
+
+    // MaxHeight de base à 0 pour le content 
+
+    const [maxHeight, setMaxHeight] = useState('0px');
+
+    useEffect(() => {
+        if (contentRef.current) {
+            setMaxHeight(isOpen ? `${contentRef.current.scrollHeight}px` : '0px');
+        }
+    }, [isOpen]);
+    
+
     return (
         <div className={`objetsCollapse ${className}`}>
-            <h2 className="titleCollapse" onClick={onoffCollapse}>
+            <button
+                type="button"
+                className="titleCollapse" 
+                onClick={onoffCollapse}
+            >
                 {title}
-                
                 {/* Ajout de la classe rotate si isOpen est true */}
                 <span className={`iconeCollapse ${isOpen ? 'rotate' : ''}`}>
                     ^
                 </span>
-            </h2>
-
-            {/* Affichage du content sous condition que isOpen est true */}
-            {isOpen && ( 
-                <p className={`contentCollapse ${isOpen ? 'collapseOuverte' : ''}`}>
-                    {content}
-                </p>
-            )}
+            </button>
+            <div 
+                ref={contentRef} 
+                className="contentCollapse" 
+                style={{ maxHeight: maxHeight, transition: 'max-height 0.3s ease' }}
+            >
+                <p>{content}</p>
+            </div>
         </div>
     );
 }

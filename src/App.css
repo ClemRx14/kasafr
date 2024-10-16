@@ -3,7 +3,10 @@
 /* Composants Header et Footer */
 * {
     font-family: 'Montserrat';
+    box-sizing: border-box;
+    margin: 0;
 }
+
 header {
     width: 86%;
     margin: 0 auto;
@@ -37,7 +40,7 @@ footer {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 .logofooter {
@@ -136,38 +139,50 @@ a {
     flex-wrap: wrap;
 }
 
-/* Composant Collapse page About */
-
-.containerCollapse {
-    width: 71%;
+/* Composant Collapse */
+.collapseLogement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 0 auto;
-    margin-bottom: 50px;
-}
-
-.objetsCollapse {
-    background-color: #FF6060;
-    border-radius: 5px 5px 5px 5px;
-    cursor: pointer;
-    margin-bottom: 30px;
+    width: 100%;
 }
 
 .titleCollapse {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    margin-bottom: 0;
+    cursor: pointer;
+    border: none;
     height: 52px;
+    width: 71%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    outline: none;
+    background-color: #FF6060;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.contentCollapse {
+    width: 71%;
+    margin: 0 auto;
+    padding-top: 10px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-.contentCollapse {
-    background-color: white;
-    font-weight: 400;
+.contentCollapse p {
+    margin-left: 10px;
+    padding-bottom: 10px;
     font-size: 18px;
-    padding-left: 10px;
-    margin-top: 0;
-    padding-top: 5px;
+    font-weight: 400;
+}
+
+.descriptionAbout {
+    margin-bottom: 20px;
+
 }
 
 .iconeCollapse {
@@ -301,6 +316,7 @@ a {
     margin-bottom: 0;
     width: 50%;
     white-space: nowrap;
+    margin-top: 20px;
 }
 
 .localisationLogement {
@@ -308,33 +324,9 @@ a {
     font-size: 18px;
     margin-top: 10px;
 }
-.collapseLogement {
-    width: 86%;
-    margin: 0 auto;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* margin-bottom: 220px; */
-    /* Voir pour un autre moyen */
-}
-
-.collapseLogement .contentCollapse {
-    padding-top: 10px;
-    background-color: #F5F5F5;
-    border-radius: 5px;
-    padding-bottom: 10px;
-}
-
-.collapseLogement .titleCollapse {
-    margin-top: 0;
-}
-    
+   
 .descriptionLogement, .equipementsLogement {
-    height: 48px;
-    width: 45%;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
 }
 
 .equipementsLogement ul {
@@ -342,7 +334,6 @@ a {
     padding: 0;
     margin: 0;
 }
-
 
 .filtresLogement {
     width: 100%;
@@ -387,6 +378,7 @@ a {
     color: #FF6060;
     font-size: 18px;
     font-weight: 500;
+    margin-top: 20px;
 }
 
 .logementRating img {
@@ -398,6 +390,7 @@ a {
     display: flex;
     justify-content: flex-end;
     margin-top: 25px;
+    margin-bottom: 30px;
 }
 
 .star {
@@ -427,9 +420,6 @@ a {
     .textePageError {
         font-size: 25px;
     }
-    .containerCollapse .descriptionAbout:last-child {
-        margin-bottom: 150px;
-    }
 }
 
 @media screen and (max-width : 768px) {
@@ -444,9 +434,6 @@ a {
         height: 111px;
     }
     .textePageError {
-        font-size: 17px;
-    }
-    .contentCollapse {
         font-size: 17px;
     }
     .containerCardLogements {
