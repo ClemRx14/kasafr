@@ -396,10 +396,8 @@ a {
 
 .logementRating {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin-top: 25px;
-    flex-direction: row-reverse;
-    /* Inverse l'ordre d'affichage pour remplir les étoiles de gauche à droite */
 }
 
 .star {
@@ -407,12 +405,6 @@ a {
     height: auto;
     cursor: pointer;
 }
-
-.starVide:hover path,
-.starVide:hover ~ .starVide path {
-    fill: #FF6060;
-}
-
 
 /* Responsive  */
 
