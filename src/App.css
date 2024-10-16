@@ -7,6 +7,7 @@
 header {
     width: 86%;
     margin: 0 auto;
+    margin-top: 30px;
 }
 .navheader {
     display: flex;
@@ -18,7 +19,7 @@ header {
     list-style-type: none;
 }
 .listeheader li {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 .listeheader a {
     text-decoration: none;
@@ -36,6 +37,7 @@ footer {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-top: 70px;
 }
 
 .logofooter {
@@ -146,7 +148,6 @@ a {
     background-color: #FF6060;
     border-radius: 5px 5px 5px 5px;
     cursor: pointer;
-    max-height: 110px;
     margin-bottom: 30px;
 }
 
@@ -314,7 +315,8 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 220px;
+    /* margin-bottom: 220px; */
+    /* Voir pour un autre moyen */
 }
 
 .collapseLogement .contentCollapse {
@@ -440,7 +442,11 @@ a {
 
 @media screen and (max-width : 768px) {
     .navheader img {
-        width: 35%;
+        width: 30%;
+    }
+    .listeheader {
+        font-size: 18px;
+
     }
     .bannierecontainer {
         height: 111px;
@@ -450,6 +456,9 @@ a {
     }
     .contentCollapse {
         font-size: 17px;
+    }
+    .containerCardLogements {
+        background-color: white;
     }
 }
 
