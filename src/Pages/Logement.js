@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Slideshow from '../Composants/Slideshow';
 import Collapse from '../Composants/Collapse';
+import { Navigate } from 'react-router-dom';
 
 
 import logementsData from '../logements.json';
@@ -13,6 +14,10 @@ function Logement() {
 
   const { id } = useParams();
   const logement = logementsData.find((logement) => logement.id === id);
+
+  if (!logement) {
+    return <Navigate to="/Error.js" />;
+  }
 
   const ratingStars = (rating) => {
     const stars = []
