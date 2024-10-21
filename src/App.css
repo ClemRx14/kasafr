@@ -21,6 +21,10 @@ header {
     display: flex;
     list-style-type: none;
 }
+.listeheader li:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
 .listeheader li {
     margin-left: 20px;
 }
@@ -377,7 +381,7 @@ a {
     color: #FF6060;
     font-size: 18px;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .logementRating img {
